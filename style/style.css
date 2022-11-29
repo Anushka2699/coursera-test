@@ -1,83 +1,126 @@
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-}
 
-* {
-    box-sizing: border-box;
-}
-
-h1 {
-    text-align: center;
-    font-size: 4em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.content {
-    clear: right;
-    padding: 10px;
-    font-size: 1em;
-}
-
-
-.first, .sec, .thi  {
-    background-color: grey;
-    border: 3px solid black;
-    margin: 10px;
-    font-size: 3em;
-    
-}
-
-.chicken, .Beef, .Sushi {
-    background-color: rosybrown;
-    border: 3px solid black;
-    text-align: center;
-    width: 100px;
-    margin: 0px 0px 10px 10px;
-    padding: 10px;
-    float: right;
-    margin-top: -3px;
-    margin-right: -3px;
-    font-weight: bold;
-    font-size: 5em;
-}
-
-.Beef {
-    background-color: red;
-
-}
-
-.Sushi {
-    background-color: yellow;
-}
-
-
-@media (min-width:992px) {
-    .column-lg-3 {
-        width: 33.33%;
-        float:left;
+/*basic style*/
+    * {
+        box-sizing: border-box;
     }
-}
 
-@media (min-width:768px) and (max-width:991px) {
-    .column-md-6 {
-        width:50%;
-        float:left;
+    body {
+        background-color: white;
+    }
+
+    h1 {
+       margin-bottom: 15px;
+    text-align: center;
+    color: #ff4532;
+    font-size: 50px;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 3.5px solid black;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: auto;
     }
 
-    .column-md-12  {
-        width:100%;
-        float: left;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+    .sub1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FFB6C1;
 
-@media (max-width:767px) {
-    .column-sm-12 {
-        width:100%;
-        float:left;
     }
-}
+
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FF0000;
+
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+         margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
